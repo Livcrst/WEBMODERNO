@@ -44,7 +44,7 @@
     document.querySelectorAll('[wm-folder]').forEach(folder => {
         folder.onclick = function(e) {
             e.preventDefault();
-            const ul = folder.nextElementSibling
+            const ul = folder.nextElementSibling //Isso aqui obtem o proximo elemento irmão de um item de lista
             const d = ul.style.display
             ul.style.display = d === 'none' ? 'block' : 'none'
         }
