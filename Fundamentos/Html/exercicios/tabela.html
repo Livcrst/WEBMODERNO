@@ -1,4 +1,4 @@
-<table border="1">
+<table>
     <caption>Produtos</caption> 
     <!-- o que é essa tabela -->
 
@@ -31,4 +31,36 @@
             <td>2</td>
         </tr>
     </tbody>
+    <tfoot>
+        <!-- Roda pé da tabela -->
+        <tr>
+            <td colspan="3">
+                total:
+            </td>
+            <td>
+                15000
+            </td>
+        </tr>
+    </tfoot>
 </table>
+<style>
+    table{
+
+        border-collapse: collapse;
+
+    }
+    th,td {
+        padding: 10px;
+        
+    }
+    thead tr{
+        border-bottom: solid 3px #444;
+    }
+    tbody tr:hover{
+        background-color: #dedede;
+    }
+    tfoot{
+        background-color: #444;
+        color: white;
+    }
+</style>
