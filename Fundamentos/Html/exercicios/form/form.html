@@ -2,8 +2,53 @@
 
 <form action="http://localhost:3003/usuarios" method="post">
 
-    <input type="text" name="nome" id="">
+    <input type="text" placeholder="nome" name="nome" id="">
+    <input type="password" placeholder="senha" name="senha" id="">
+    <input type="email" placeholder="email" name="email" id="">
+    <textarea placeholder="Biografia" name="bio" cols="80" rows="10"> </textarea>
+
+    <div>
+        <input type="radio" name="tipo" value="admin"> Administrator
+        <input type="radio" name="tipo"  value="regular"> Regular
+        <input type="radio" name="tipo"  value="prof"> Professor
+    </div>
+
+    <div>
+        <input type="checkbox" name="ativo" >Ativo
+    </div>
+    <div>
+        <!-- O parâmetro multiple em um select faz com que seja possivel selecionar mais de uma opção na tela -->
+        <select name="estado">
+
+            <option value="alagoas">
+                AL
+            </option>
+            <option value="sergipe">
+                SE
+            </option>
+            <option value="bahia">
+                BA
+            </option>
+        </select>
+    </div>
+    <div>
+        <select name="interesses"></select>
+    </div>
+
     <button>Incluir</button>
 
 
 </form>
+
+<style>
+     input, textarea,select {
+         display: block;
+         margin-bottom: 10px;
+     }
+     input[type="radio"], input[type="checkbox"]{
+         /* Essa sintaxe permite que eu aplique coisas para itens do tipo radio */
+         display: inline
+     }
+
+
+</style>

@@ -6,7 +6,7 @@ const app = express();
 // app.use(bodyParser.json({ type: 'application/json' }));
 
 
-app.use(express.json({ extended: true }));
+app.use(express.json());
 app.use(express.urlencoded());
 app.post('/usuarios', (req, resp) => {
     console.log(req.body);
