@@ -12,6 +12,13 @@ app.post('/usuarios', (req, resp) => {
     console.log(req.body);
     resp.status(200).send('Deu bom hein');
 });
+app.put('/usuarios/:id', (req, resp) => {
+    console.log(req.params.id);
+    console.log(req.body);
+    resp.status(200).send('Deu bom na alteração hein');
+});
+
+
 
 app.listen(3003);
 
