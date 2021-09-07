@@ -1,32 +1,40 @@
-<p>
-    <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Imagem dentro da pasta 1: Muro de uma cidade" width="513" height="342" title="muro da cidade">
-</p> 
-<p>
-    <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="Gif da logo da Cod3r" title="intro da Cod3r">
-</p>
-<p class="circular">
-    <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="imagem de prédio" title="Rio de Janeiro" height="342">
-</p>
-
-<p class="texto">
-    <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="avatar" height="50" align="left">
-
-    lasjdfiuajkds ghjlfsdkçlghdsfvnczdvjklhsdjklfah vbjfxzdjkujjjiermmjn ughasduybnvk m,jhewarkdddsehtguipos erujhiproeujkçl raeshuipog ejhmipoms dfgipgm, gei9stvpohiterm jtrgjklçfsdjkfgjkdggjkksfjkjlsgkk flgfggjkçgkfjkldçfjkgjkfçgjk gjkioreiopiu etuioetjklfvj kldg jk gh  kkl gdjkgdjigruiriueituuierijsejklfvkjlszdkfj
+<div wm-slider>
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Imagem dentro da pasta 1: Muro de uma cidade" width="513" height="342" title="muro da cidade">
+    </p> 
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="Gif da logo da Cod3r" title="intro da Cod3r">
+    </p>
+    <p class="circular">
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="imagem de prédio" title="Rio de Janeiro" height="342">
+    </p>
     
-</p>
-<p class="cidade">
-
-</p>
-
-<p>
-    <picture>
-        <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
-        media="(min-width: 600px)">
-        <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="">
-    </picture>
-</p>
-
+    <p class="texto">
+        <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="avatar" height="50" align="left">
+    
+        lasjdfiuajkds ghjlfsdkçlghdsfvnczdvjklhsdjklfah vbjfxzdjkujjjiermmjn ughasduybnvk m,jhewarkdddsehtguipos erujhiproeujkçl raeshuipog ejhmipoms dfgipgm, gei9stvpohiterm jtrgjklçfsdjkfgjkdggjkksfjkjlsgkk flgfggjkçgkfjkldçfjkgjkfçgjk gjkioreiopiu etuioetjklfvj kldg jk gh  kkl gdjkgdjigruiriueituuierijsejklfvkjlszdkfj
+        
+    </p>
+    <p class="cidade">
+    
+    </p>
+    
+    <p>
+        <picture>
+            <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+            media="(min-width: 600px)">
+            <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="">
+        </picture>
+    </p>
+    
+</div>
 <style>
+    /* p{
+        
+        position: absolute;
+        display: none;
+    } */
+
     .circular {
         background-color: #444; 
         width: 513px;
@@ -46,3 +54,21 @@
         background-size:200%;
     }
 </style>
+
+<script>
+    function mover(elemento, inicio, fim, passo, callback){
+        novoInicio = inicio - passo
+        if (novoInicio >= fim){
+            elemento.style.left = novoInicio + 'px';
+            setTimeout(() => mover(elemento, inicio, fim), 7); //Esse função serve para chamar uma função dado uma quantidade de tempo
+        }
+        else{
+            callback()
+        }
+
+    }
+
+    const p = document.querySelector('[wm-slider] > p');
+    // p.style.display = 'none';
+    console.log(p)
+</script>
