@@ -1,0 +1,10 @@
+body{
+    font-size: 40px;
+}
+ol, ul {
+    padding: 0px;
+}
+.tag{
+    border: solid 4px;
+    margin: 5px;
+}
