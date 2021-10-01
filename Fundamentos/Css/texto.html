@@ -16,6 +16,60 @@
             flex-direction: column;
             align-items: center;
         }
+        p{
+            font-size: 1em;
+            font-size: 100%;
+            font-size: 16px;
+            font-size: 12pt;
+
+
+            /* Unidades absolutas */
+            font-size: 100px; /*Tamanho relativo ao pixel*/
+            font-size: 72pt; /*Pontos, 12 pnts é igual a 16px*/
+            font-size: 1in; /*É igual a uma polegada*/
+
+
+            /* Unidades relativas */
+
+            font-size: 2.2em; /*Referencia ao pai*/
+            font-size:2.2rem; /*Referencia ao root */
+           /* font-size: 50vh;  não é comum usar a altura ou a largura de viewport em fontes */
+
+            /* Tipos de fonts */
+
+            font-family: monospace; /*Todos os caracter possuem o mesmo espaçamento*/
+            font-family: Georgia, serif; /*Georgia ou fonte serifada*/ 
+            font-family: verdana, sans-serif; /* verdana ou fonte sem serifa */
+            font-family:  'Indie Flower',cursive; /* fonte importada ou a cursiva */
+
+            /* Peso de fonte, pode ser numerivo e coom nome pre definido */
+
+            font-weight: bold;
+            font-style: italic;
+
+            /* text-transform: uppercase; Deixar tudo em maiusculo */
+            word-spacing: 10px; /*Espaçamento entre as palavras*/ 
+            letter-spacing: 20px; /*Espaçamento de letras*/
+            line-height: 2.5em; /*Altura da linha*/
+            text-align: center; /*alinhamento de texto */
+        }
+        .botao{
+            font-size: 28px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+        .destaque{
+            color: #fff;
+            background: tomato;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+        .destaque:active{
+            box-shadow: none;
+        }
+        .destaque:hover{
+            background: rgb(221, 79, 54);
+        }
     </style>
 </head>
 
