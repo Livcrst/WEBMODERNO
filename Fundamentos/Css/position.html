@@ -6,6 +6,68 @@
     <title>Position</title>
     <style>
         /* ... */
+        div{
+
+            font-size: 15px;
+            padding: 30px;
+            border: solid 5px #222;
+            color: white;
+        }
+
+        .static{
+            /* as proprieddades top , bottm, left, right são desconsideradas. a posição é dada pelas dimensões do conteudo e seus vizinhos*/
+            background-color: steelblue;
+        }
+        .fixed{
+            /* Considera o posicionamento e assume um valor fixo na tela, independente da rolagem e etc, ele assume um valor absoluto, ou seja, desconsidera o posicionamento dos outros elementos na página*/
+            position: fixed;
+            background-color: tomato;
+            bottom: 30px;
+            right: 0;
+
+        }
+        .relative1{
+            /* Considera o elemento anteior para seu posicionamento */
+            position: relative;
+            left: 50px;
+            top: 10px;
+            background-color: springgreen;
+        }
+        .absolute1{
+            /* Vai se posicionar de forma absoluta com relação a poágina */
+            position: absolute;
+            left: 350px;
+            top: 120px;
+            background-color:violet;
+        }
+        /* Se você tem algum elemento com position absolute dentro de um elemento que possui position relative, o compartamenteo é que o elemento seja absoluto dentro do elemento a qual ele pertence */
+
+        .relative2{
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 220px;
+            height: 220px;
+            background-color: slateblue;
+        }
+        .absolute2{
+            position: absolute;
+            background-color:orange;
+            left: 10px;
+            top: 100px;
+            width: 20px;
+            height: 20px;
+
+        }
+        .sticky{
+            /* Serve para que eu consiga fixar um item na tela, quando eu vou usando o scroll. mesmo q o conteudo vá passando, o elemento ficará fixo no top da tela */
+
+            position: -webkit-sticky; /*Safari*/
+            position: sticky;
+            background-color: #777;
+            top: 10px;
+        }
+
     </style>
 </head>
 
