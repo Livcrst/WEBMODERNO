@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Media Query</title>
     <style>
+        
         div {
             font-size: 40px;
             margin: 20px;
@@ -11,6 +12,12 @@
             background-color: coral;
             border: solid 5px;
             display: none;
+        }
+        @media (max-width: 600px){
+            /* Serve para definir propriedades a serem aplicadas  seguindo um dado critério */
+            .muito-pequeno{
+                display:block;
+            }
         }
     </style>
 </head>
