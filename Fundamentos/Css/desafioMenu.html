@@ -8,8 +8,14 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         /* ... */
+        *{
+            font-family:"Oswald", sans-serif;
+            box-sizing: border-box;
+           
+        }
         body{
             width:100%;
+            background: lightgray;
         }
         header{
             background: rgb(112, 108, 108);
@@ -18,6 +24,8 @@
 
             display: flex;
             justify-content: space-between;
+
+            border-bottom:solid 5px rgb(122, 122, 145);
 
             /* width: 100%; */
 
@@ -75,6 +83,12 @@
         }
 
         /* Usando os media query para ajustar o tamanho da baixa e menu */
+        
+        @media (max-width: 600px) {
+            .autenticacao{
+                display: none;
+            }
+        }
     </style>
 </head>
 
