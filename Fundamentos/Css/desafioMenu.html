@@ -8,35 +8,104 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         /* ... */
+        body{
+            width:100%;
+        }
+        header{
+            background: rgb(112, 108, 108);
+            margin-top: -10px;
+            padding: 1em;
+
+            display: flex;
+            justify-content: space-between;
+
+            /* width: 100%; */
+
+        }
+        .nav-page{
+            display: flex;
+        }
+        .menu-toggle{
+            display: none;
+        }
+        .menu{
+            margin-left: -15em;
+        }
+        .menu ul{
+            list-style-type: none;
+            margin-top: 0.5em;
+            
+        }
+        .menu ul li{
+            display: inline;
+
+        }
+        .menu ul li a, aside a{
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+
+            text-decoration: none;
+        }
+        .logo  img{
+            width: 40%;
+        }
+        .botao{
+            background-color:rgb(189, 28, 28);
+            padding: 0.5em;
+
+            border-radius: 20px;
+            transition: 1s all;
+        }
+        .botao:hover{
+            background: tomato;
+        }
+
+        a {
+            margin: 0 0 0 0.5em;
+            transition: 1s all;
+
+        }
+        a:hover{
+            background: rgb(122, 122, 145);
+            padding: 0.7em;
+        }
+        .autenticacao{
+            margin-right: .5em;
+        }
+
+        /* Usando os media query para ajustar o tamanho da baixa e menu */
     </style>
 </head>
 
 <body>
     <header class="cabecalho">
-        <div class="logo">
-            <a href="#inicio">
-                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
-            </a>
+        <div class="nav-page">
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+                </a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fa fa-lg fa-bars"></i>
+            </button>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#inicio">Início</a>
+                    </li>
+                    <li>
+                        <a href="#cursos">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <button class="menu-toggle">
-            <i class="fa fa-lg fa-bars"></i>
-        </button>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#inicio">Início</a>
-                </li>
-                <li>
-                    <a href="#cursos">Cursos</a>
-                </li>
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
         <aside class="autenticacao">
             <a href="#login">Login</a>
             <a href="#registar" class="botao destaque">Registrar</a>
