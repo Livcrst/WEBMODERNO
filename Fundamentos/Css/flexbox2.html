@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="css/tag.css">
     <style>
         /* ... */
+
+        div{
+            border: 5px solid dodgerblue;
+            font-size: 40px;
+        }
+
+        .flex-container{
+            display: flex;
+
+            height: 300px;
+            width: 600px;
+
+        }
+
+        .flex-container div{
+            box-sizing: border-box;
+        }
+
+        .flex-container div:nth-last-child(3){
+            background:red;
+            order: 1; /*Por um peso no elemento, os elementos de maior peso passa a ser exibido por ultimo*/
+        }
+
+
     </style>
 </head>
 
