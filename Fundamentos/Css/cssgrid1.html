@@ -22,6 +22,18 @@
             border: solid 5px dodgerblue;
             background: #fff;
         }
+        /* É possivel usar o css grid com o display flex sem problemas */
+
+        body{
+            /* Grid template Columns: Comportamento que minhas colunas irão ter */
+
+            display: grid;
+
+            grid-template-columns: 50% 50%; /*Podemos usar um repeat no grid*/
+
+            grid-template-columns: 200px 20% 1fr;
+        }
+
     </style>
 </head>
 
