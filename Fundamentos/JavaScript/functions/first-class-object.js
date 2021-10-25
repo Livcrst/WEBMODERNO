@@ -17,3 +17,10 @@ obj.falar = function () {return 'Opa!'}
 console.log(obj.falar())
 
 // Passar uma função como parametro para outra função.
+const run = (fun) => {
+    fun ();
+}
+
+function fun () {
+    console.log('Executing ...');
+}
