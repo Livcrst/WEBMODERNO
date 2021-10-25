@@ -24,3 +24,6 @@ const run = (fun) => {
 function fun () {
     console.log('Executing ...');
 }
+
+// um função pode retornar/conter outra função.
+
