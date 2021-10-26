@@ -12,3 +12,4 @@ imprimir(3,4, soma);
 
 // Callback é vc passar uma funçao q será chamada quando um evento x acontecer.
 
+
