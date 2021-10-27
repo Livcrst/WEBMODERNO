@@ -23,8 +23,8 @@ const mult = function mult (x,y){
 
 const factory = (name, age ) =>{
     return {
-        nome: name,
-        idade: age
+        name, //Pode apenas por o nome do atributo diretamente aqui que o parametro seria criado.
+        age
     }
 }
 
