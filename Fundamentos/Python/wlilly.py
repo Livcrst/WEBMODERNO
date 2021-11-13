@@ -15,5 +15,6 @@ def main (n):
 print(main())
 
 
-while True:
-    pass
+
+
+ 
