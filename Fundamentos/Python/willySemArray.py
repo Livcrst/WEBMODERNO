@@ -9,5 +9,5 @@ while True:
             entrada = int(input())
             if entrada == n:
                 contador += 1
-        print('{} appered {} times'.format(entrada,contador))
+        print('{} appered {} times'.format(n,contador))
 
