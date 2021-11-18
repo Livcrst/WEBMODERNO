@@ -1,13 +1,14 @@
 contador = 0
 
 while True:
-    n = int(input('testando: '))
+    n = int(input())
     if n == -1:
         break
     else:
-        for i in range(1000):
+        for i in range(10):
             entrada = int(input())
             if entrada == n:
                 contador += 1
-        print('{} appered {} times'.format(n,contador))
+        print('{} appeared {} times'.format(n,contador))
+        contador = 0
 

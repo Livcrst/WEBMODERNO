@@ -4,15 +4,23 @@ def cont (n,lista):
         if elemento == n:
             contador += 1
     return contador
-    
-def main (n):
+
+def criar():
     lista = []
     for item in range(1000):
         entrada = int(input())
         lista.append(entrada)
-    return cont(n,lista)
+    return lista
 
-print(main())
+    
+while True:
+    itens = criar()
+    n = int(input())
+    if n == -1:
+        break
+    else:
+        contador = cont(n, itens)
+        print('{} appeared {} times'.format(n,contador))
 
 
 
